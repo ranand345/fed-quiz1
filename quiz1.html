@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+  border-right:1px solid #bbb;
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.responsive{
+width:100%;
+
+height:200px;}
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.imgcontainer img{
+    width: auto;
+    height: 500px;
+    margin-left:30px;
+    margin-top:30px;
+    
+}
+
+.imgcontainer{
+    background:linear-gradient(to bottom,pink,rgb(155, 138, 115));
+    
+}
+
+.tablet{
+    display:none;
+}
+
+.mobile{
+    display:none;
+}
+
+.content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    background:linear-gradient(to bottom,pink,rgb(155, 138, 115));
+    padding: 40px;
+   
+}
+
+.content h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.something{
+    display: none;
+}
+
+/* dekstop view */
+
+@media (max-width: 1095px){
+    .imgcontainer img{
+        width: auto;
+        height: 480px;
+        
+    }
+    
+    .content{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;;
+        font-weight: small;
+        letter-spacing: 0px;
+        background:linear-gradient(to bottom,pink,rgb(155, 138, 115));
+        padding: 20px;
+    }
+}
+
+/* tablet view */
+
+@media (max-width: 1075px){
+    .imgcontainer img{
+        width: auto;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .tablet{
+        display:block;
+    }
+
+    .dekstop{
+        display: none;
+    }
+
+    .something{
+        display:inline-block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;;
+        font-weight: small;
+        letter-spacing: 0px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    .content{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;;
+        font-weight: small;
+        letter-spacing: 0px;
+        background:linear-gradient(to bottom,pink,rgb(155, 138, 115));
+        padding: 20px;
+        
+    }
+}
+
+/* mobile view */
+
+@media (max-width: 686px){
+
+    main{
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 30% 70%;
+        border-radius: 100px;
+    }
+
+    .imgcontainer img{
+        width: auto;
+        height: 300px;
+    }
+
+    .tablet{
+        display:none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .something{
+        display: none;
+    }
+
+    .imgcontainer{
+        display: flex;
+        justify-content: center;
+        margin-bottom:30px;
+    }
+    
+    .content{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;;
+        font-weight: small;
+        letter-spacing: 0px;
+        background:linear-gradient(to bottom,pink,rgb(155, 138, 115));
+        padding: 20px;
+        
+    }
+
+  </style>
+<body>
+  <ul>
+  <li><a  href="#">Contact</a></li>
+  <li><a href="#">FED Assignment</a></li>
+  <li><a href="#">FED Quiz</a></li>
+  <li ><a href="#">Home</a></li>
+</ul>
+</br></br>
+
+<img src="hello.jpg" alt="Nature" class="responsive" >
+
+<main>
+        <div class="imgcontainer"><img src="hello1.jpg" alt=""><br></br><span class="something">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem amet reprehenderit deserunt laudantium illo aspernatur dolore atque totam dolorum. Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, vel!
+        </span></div>
+        <div class="content">
+            <h3 class="dekstop">1st View</h3>
+            <h3 class="tablet">Compressed View for Tablet</h3>
+            <h3 class="mobile">More compressed view for Mobile</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eum accusantium mollitia? Iste exercitationem quos sed totam quae magni, hic reprehenderit rem nobis consectetur quia tempore praesentium laboriosam ipsam modi esse dolore error laudantium commodi! Cupiditate labore expedita error, unde ipsam autem perferendis, aspernatur dolores dolorum, laborum veniam natus. Ullam nisi porro sit dolore tenetur libero ipsa id accusantium natus deleniti doloremque consequuntur, ratione rem impedit atque perspiciatis odit quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium numquam maxime natus laudantium mollitia neque, sed tempore ut dicta corporis? Praesentium dolorum suscipit adipisci, illo, ipsam magnam at cum consectetur quia accusantium repellendus a quas ut iste, dolore nihil explicabo? Soluta adipisci consequuntur nam! Nihil voluptates aspernatur totam eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi, voluptate alias culpa numquam nobis! Praesentium cum, deserunt provident facilis molestiae, nemo corporis accusamus nisi veritatis animi minus laboriosam magni numquam nesciunt perspiciatis laborum alias consequatur officia assumenda vel! Labore sapiente excepturi nesciunt, explicabo obcaecati repellat cumque officia quam hic possimus similique aliquam eum beatae at nulla blanditiis dolorem tempora aspernatur expedita reiciendis accusantium tenetur ea esse sunt. !
+           
+        </div>
+    </main>
+
+
+ 
+ 
+</body>
+  
+  
